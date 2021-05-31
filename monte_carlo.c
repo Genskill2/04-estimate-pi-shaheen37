@@ -57,4 +57,3 @@ float mc_pi(int itr)
 	pi /= (float)(itr);
 	return pi;
 }
-
