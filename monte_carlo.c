@@ -42,7 +42,7 @@ int main(void) {
 float mc_pi(int itr)
 {
 	
-	float x,y,j=1,pi,inside;
+	float x,y,j=1,pi,inside,total;
 	for(;j<=itr;j++)
 	{
 	x= frandom();
@@ -52,8 +52,8 @@ float mc_pi(int itr)
 		inside++;
 	}
 	}
-	
+	total = itr;
 	pi = 4*inside;
-	pi /= (float)(itr);
+	pi /= total
 	return pi;
 }
