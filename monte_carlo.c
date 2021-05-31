@@ -47,13 +47,13 @@ float mc_pi(int itr)
 	{
 	x= frandom();
 	y= frandom();
-	if(((x*x)+(y*y))<=0.5)
+	if(((x*x)+(y*y))<=1)
 	{
 		inside++;
 	}
 	}
 	total = (float)itr;
-	pi = 8*inside;
+	pi = 4*inside;
 	pi /= total;
 	return pi;
 }
