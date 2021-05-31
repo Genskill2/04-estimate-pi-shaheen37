@@ -39,5 +39,22 @@ int main(void) {
   }
 }
 
-
+float mc_pi(int itr)
+{
+	
+	float x,y,j=1,pi,inside;
+	for(;j<=itr;j++)
+	{
+	x= frandom();
+	y= frandom();
+	if(((x*x)+(y*y))<0.25)
+	{
+		inside++;
+	}
+	}
+	
+	pi = 4*inside;
+	pi /= (float)(itr);
+	return pi;
+}
 
