@@ -52,8 +52,8 @@ float mc_pi(int itr)
 		inside++;
 	}
 	}
-	total = itr;
+	total = (float)itr;
 	pi = 4*inside;
-	pi /= total
+	pi /= total;
 	return pi;
 }
